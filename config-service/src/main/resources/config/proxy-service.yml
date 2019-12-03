@@ -1,0 +1,56 @@
+#server:
+#  port: 8060
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+ribbon:
+  ReadTimeout: 60000
+zuul:
+  routes:
+    department:
+      path: /department/**
+      serviceId: department-service
+    employee:
+      path: /employee/**
+      serviceId: employee-service
+    organization:
+      path: /company/**
+      serviceId: company-service
+    document:
+      path: /document/**
+      serviceId: document-service
+
+
+spring:
+  profiles: proxy1
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-peer1:8761/eureka/
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
+    fetch-registry: true
+server:
+  port: 8060
+
+---
+
+spring:
+  profiles: proxy2
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-peer1:8761/eureka/
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
+    fetch-registry: true
+server:
+  port: 8061

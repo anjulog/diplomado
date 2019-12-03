@@ -1,0 +1,41 @@
+server:
+  port: 8200
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-peer1:8761/eureka/
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+---
+spring:
+  profiles: document
+  application:
+      name: proxy-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-peer1:8761/eureka/
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
+    fetch-registry: true
+server:
+  port: 8200
+
+---
+spring:
+  profiles: document
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-peer1:8761/eureka/
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
+    fetch-registry: true
+server:
+  port: 8201
