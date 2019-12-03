@@ -1,0 +1,20 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.uniajc.diplomado</groupId>
+    <artifactId>diplomado-arquitectura</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>discovery-service</module>
+        <module>config-service</module>
+        <module>gateway-service</module>
+        <module>proxy-service</module>
+        <module>employee-service</module>
+        <module>department-service</module>
+        <module>account-service</module>
+        <module>company-service</module>
+    </modules>
+
+</project>
