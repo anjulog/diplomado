@@ -1,0 +1,39 @@
+<ion-content fullscreen="true"  [scrollEvents]="true"  class="ion-padding" > <!--style=" color:white;  --background: url('../../../assets/img/login.jpg') no-repeat center center fixed  ">-->
+  <ion-grid class="login-grid">
+    <ion-row class="justify-content-center"> 
+
+        <ion-col col-4></ion-col>
+        <ion-col  size-md="6" size-lg="4" size-xs="12" class="login-col align-self-center" col-4>
+          <ion-img cache="true" src="../../../assets/img/logo4.jpeg" class="logo-introimg"></ion-img>
+        </ion-col>
+        <ion-col col-4></ion-col>
+     
+    </ion-row>
+
+    <ion-row class="justify-content-center"> 
+     
+        <ion-col col-4></ion-col>
+        <ion-col col-4></ion-col>
+        <ion-col col-4></ion-col> 
+    </ion-row>
+    
+    <ion-row  fullscreen="true"   class="login-row justify-content-center">  
+        <ion-col size-lg="4" size-xs="12" ></ion-col>
+        <ion-col  size-md="6" size-lg="4" size-xs="12" class="login-col align-self-center">
+        <!-- <ion-col class="login-col"> -->
+          <div *ngIf="!isLogged">
+
+            <ion-button expand="full"  (click)="onClickEnter()" color="primary" class="login-button">Inicia Sesión</ion-button>
+            <br>
+            <p routerLink="/signup-user" class="ion-text-center">¿No tienes cuenta?</p>
+          </div>
+          <div *ngIf="isLogged">
+       
+          </div>
+          <br>
+          <br>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

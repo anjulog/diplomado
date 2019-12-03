@@ -1,0 +1,11 @@
+.headercompany{
+    display:none;
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+
+    
+    .headercompany{
+        display:block;
+    }
+}

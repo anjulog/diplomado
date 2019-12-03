@@ -1,0 +1,18 @@
+<ion-header class="headercompany">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end" class="logotoolbar" (click)="prueba()">
+      <ion-img cache="true" src="../../../assets/img/logo5.jpeg" style="width:100%" ></ion-img>
+    </ion-buttons>
+    <ion-buttons slot="end" *ngIf="isDisplay" class="logotoolbar">
+        <ion-img cache="true" src="../../../assets/img/logo5.jpeg" style="width:100%" ></ion-img>
+      </ion-buttons>
+    <ion-title>Lista de Compañias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+</ion-content>

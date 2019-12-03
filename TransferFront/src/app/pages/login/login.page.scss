@@ -1,0 +1,148 @@
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 50%;
+}
+
+.title-login {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 50%;
+}
+
+.no-scroll .scroll-content {
+    overflow: hidden;
+}
+
+$white-color: #fff;
+$height100: 50%;
+
+.login-grid {
+    width:100%;
+    height: $height100;
+}
+
+.login-row {
+    height: $height100;
+ 
+}
+
+.login-col {
+//    left: 31%;
+//    height: 100%;
+    //-webkit-box-shadow: 2px 3px 17px 5px rgba(0,0,0,0.44); 
+    //box-shadow: 2px 3px 17px 5px rgba(0,0,0,0.44);
+    border-color: rgba(0, 0, 0, 0);
+}
+.login-item {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    //color: white; 
+    
+    //width: 350px;
+}
+
+.login-button {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    border-color: rgba(0, 0, 0, 0.34);
+    text-align: left;
+    color: rgba(0, 0, 0, 0.84);
+    text-decoration: none;
+    /* display: inline-block; */
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    background: 0;
+    /* padding: 8px 16px;*/
+
+//width: 350px;
+}
+.login-toolbar{
+    background: none
+}
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+/* Show background if class is active */
+.show-background {
+    border-style: none;
+    background: var(--ion-color-primary);
+}
+
+/* Remove bottom border on md */
+.header-md::after {
+    background-image: none;
+}
+
+/* Remove bottom border on ios */
+.header-ios ion-toolbar:last-child {
+    --border-width: 0;
+}
+
+button.button-native {
+    border-radius: 10px 10px 10px 10px !important;
+    -moz-border-radius: 10px 10px 10px 10px !important;
+    -webkit-border-radius: 10px 10px 10px 10px !important;
+    border: 0px solid #000000;
+    background-color: red !important;
+}
+
+.login-limg{
+ 
+    width:300px !important; 
+    margin:0 auto !important;   
+}
+.logo-img{
+    width:200px !important; 
+    margin:0 auto !important;  
+}
+
+@media (min-width: 240px) and (max-width: 768px) {
+    login-grid {
+        background: #ffffff4d;
+    }
+    
+    .login-col {
+        //border: 1px solid #d5ddec;
+        //box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.44);
+        border: none;
+
+    }
+    .login-item {
+        border-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+        color: black; 
+        width: 100%;
+    }
+    .login-button {
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 0px solid #000000;
+        border-color: rgba(0, 0, 0, 0.34);
+        text-align: left;
+        color: rgba(0, 0, 0, 0.84);
+        text-decoration: none;
+        /* display: inline-block; */
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        background: 0;
+        /* padding: 8px 16px;*/
+    }
+}

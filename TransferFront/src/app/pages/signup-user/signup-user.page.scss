@@ -1,0 +1,32 @@
+.signup-col{
+
+    border: none;
+}
+
+.signup-img{
+    width:200px !important; 
+    margin:0 auto !important;  
+}
+.signup-logimg{
+    width:200px; 
+    margin:0 auto;
+
+}
+#headersignup{
+    display:none;
+}
+@media (min-width: 240px) and (max-width: 768px) {
+
+    .signup-col {
+        //border: 1px solid #d5ddec;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.44);
+        border: none;
+    }
+    .signup-logimg{
+        display:none;   
+    
+    }
+    #headersignup{
+        display:block;
+    }
+}

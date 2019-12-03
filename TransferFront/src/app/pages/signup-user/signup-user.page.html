@@ -1,0 +1,56 @@
+<ion-header id="headersignup">
+    <ion-toolbar >
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/login"></ion-back-button>
+      </ion-buttons>
+      <ion-buttons slot="end" class="logotoolbar">
+          <ion-img cache="true" src="../../../assets/img/logo5.jpeg" style="width:100%" ></ion-img>
+        </ion-buttons>
+      <ion-title>Nuevo Usuario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <div *ngIf="!isRegister">
+        <ion-grid >
+            <ion-row    class="justify-content-center" >  
+                <ion-col col-4></ion-col>
+                <ion-col align-self-center size-md="6" size-lg="4" size-xs="12" class="signup-col">
+                
+
+                  <div class="signup-logimg">
+                    <ion-img cache="true" src="../../../assets/img/logo4.jpeg" style="width:100%" class="signup-img"></ion-img>
+                  </div>
+                  <br><br>
+                  <ion-item>
+                    <ion-label position="floating">Nombre:</ion-label>
+                    <ion-input type="text" name="nameUser" [(ngModel)]="form.nameUser"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label position="floating">Login:</ion-label>
+                    <ion-input type="text" name="login" [(ngModel)]="form.login"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label position="floating">Email:</ion-label>
+                    <ion-input type="text" name="email" [(ngModel)]="form.email"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label position="floating">Contraseña:</ion-label>
+                    <ion-input type="password" name="password" [(ngModel)]="form.password"></ion-input>
+                  </ion-item>
+                  <br><br>
+                  <ion-button expand="full" (click)="onRegister()" color="primary">Registrarte</ion-button>
+
+        </ion-col>
+        <ion-col col-4></ion-col>
+      </ion-row>
+    </ion-grid>
+    </div>
+    <div *ngIf="isRegister">
+      <ion-item>
+        <ion-label>Cuenta Creada</ion-label>
+      </ion-item>
+    </div>
+    <br>
+  
+  </ion-content>
